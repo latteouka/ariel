@@ -1,0 +1,53 @@
+@use "./global";
+@use "./pages/home";
+@use "./global/variables" as *;
+
+$container-offset: 100px;
+$glow-line-color: #fff;
+$glow-line-thickness: 2px;
+$glow-line-length: 50px;
+$glow-blur-color: #f8cfcf;
+$glow-blur-thickness: 10px;
+$glow-offset: -4px;
+$animation-speed: 1200ms;
+
+.wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  color: transparent;
+  background: linear-gradient(#e0e7ff, #fea9cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.kotoba {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  display: flex;
+  color: $slate-600;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(349, 100%, 95%);
+  position: relative;
+  margin-top: 1rem;
+
+  &-wrap {
+    max-width: 400px;
+  }
+
+  &:first-child {
+    margin-top: 0rem;
+  }
+  &:last-child {
+    margin-bottom: 1rem;
+  }
+}
