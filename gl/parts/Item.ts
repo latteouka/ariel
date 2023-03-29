@@ -60,6 +60,5 @@ export class Item extends MyObject3D {
 
   protected _resize(): void {
     super._resize();
-    this.updateScale();
   }
 }
