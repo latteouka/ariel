@@ -97,21 +97,7 @@ void main(void) {
   vec3 light = ambient + diffuse;;
   light *= 0.6;
 
-  vec3 noiseColors = vec3(snoise(uv) * 0.5 + 0.5);
-  noiseColors *= pow(light.r, 5.0);
-
-  vec3 color = u_color * light * noiseColors;
-  // gl_FragColor.r = max(noiseColors.r, u_color.r);
-  // gl_FragColor.g = max(noiseColors.g, u_color.g);
-  // gl_FragColor.b = max(noiseColors.b, u_color.b);
-  // gl_FragColor.r = noiseColors.r;
-  // gl_FragColor.g = noiseColors.g;
-  // gl_FragColor.b = noiseColors.b;
-  // gl_FragColor.a = 1.0;
-  gl_FragColor = vec4(light, 1.0);
-
-  // gl_FragColor = vec4(sin(light_value.z * PI),0.0, 0.0, 1.0);
-  // gl_FragColor = vec4(u_lightPos.y, 0.0, 0.0, 1.0);
-  // gl_FragColor = vec4(sin(vUv.y), 0.0, 0.0, 1.0);
+  vec3 color = u_color * light ;
+  gl_FragColor = vec4(color, 1.0);
 }
 

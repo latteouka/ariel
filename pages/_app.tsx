@@ -3,6 +3,7 @@ import type { AppProps } from "next/app";
 import { useEffect, useRef } from "react";
 import { Noto_Sans_JP } from "next/font/google";
 import { Contents } from "@/gl/parts/contents";
+import useLenis from "@/utils/useLenis";
 const font = Noto_Sans_JP({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -11,6 +12,8 @@ const font = Noto_Sans_JP({
 
 export default function App({ Component, pageProps }: AppProps) {
   const three = useRef<Contents>();
+
+  useLenis();
 
   useEffect(() => {
     if (three.current) return;
