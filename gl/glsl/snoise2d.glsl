@@ -1,14 +1,3 @@
-uniform float u_Time;
-uniform sampler2D u_texture;
-uniform vec4 u_resolution;
-uniform vec3 u_color;
-uniform vec3 u_lightColor;
-
-varying vec3 vPos;
-varying vec2 vUv;
-varying vec3 vNormal;
-varying vec3 vSurfaceToLight;
-
 //
 // Description : Array and textureless GLSL 2D simplex noise function.
 //      Author : Ian McEwan, Ashima Arts.
@@ -78,29 +67,5 @@ float snoise(vec2 v)
   g.x  = a0.x  * x0.x  + h.x  * x0.y;
   g.yz = a0.yz * x12.xz + h.yz * x12.yw;
   return 130.0 * dot(m, g);
-}
-
-
-vec3 light_reflection(vec3 lightColor) {
-  vec3 ambient = lightColor;
-  vec3 diffuse = lightColor * dot(vSurfaceToLight, vNormal);
-  return (ambient + diffuse);
-}
-
-void main(void) {
-  vec2 uv = gl_FragCoord.xy / 4.0;
-
-  vec3 light_value = light_reflection(u_lightColor);
-  vec3 noiseColors = vec3(snoise(uv) * 0.5 + 0.5);
-
-  light_value *= 1.0;
-  noiseColors *= pow(light_value.r, 5.0);
-
-  gl_FragColor.r = noiseColors.r;
-  gl_FragColor.g = noiseColors.g;
-  gl_FragColor.b = noiseColors.b;
-  gl_FragColor.a = 1.0;
-
-  gl_FragColor = vec4(light_value, 1.0);
 }
 

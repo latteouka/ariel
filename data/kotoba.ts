@@ -1,6 +1,11 @@
 const kotoba = [
   {
     content:
+      "今日是適合卡片風的日子☁️再上班兩天就要放連假了(handclap)然後無關緊要tmi一則 廁所的燈居然不亮了：））",
+    date: "2023/03/29",
+  },
+  {
+    content:
       "昨天看小說看到的(~) “Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.” 雖然劇情很(cream)哈哈哈哈哈哈哈",
     date: "2023/03/28",
   },

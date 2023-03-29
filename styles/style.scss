@@ -1,4 +1,4 @@
-@use "./global";
+@use "./global" as *;
 @use "./pages/home";
 @use "./global/variables" as *;
 
@@ -11,38 +11,69 @@ $glow-blur-thickness: 10px;
 $glow-offset: -4px;
 $animation-speed: 1200ms;
 
+$gradient1: #e0e7ff;
+$gradient2: #90b5fe;
+$gradient3: #9d8aff;
+$gradient4: #fea9cb;
+
 .wrap {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @include sp {
+    padding: 0 1rem;
+  }
 }
 
 .heading {
   font-size: 1.5rem;
   padding: 1.5rem 2rem;
   color: transparent;
-  background: linear-gradient(#e0e7ff, #fea9cb);
+  background: linear-gradient($gradient2, $gradient4);
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 .date {
   font-size: 0.8rem;
-  margin: 0.3rem 0;
+  margin: 0 0 0.3rem 0;
+  color: $gradient3;
 }
 
 .kotoba {
-  cursor: pointer;
-  width: 100%;
-  border-radius: 1.25rem;
-  padding: 1rem;
+  //layout
   display: flex;
-  color: $slate-600;
   flex-direction: column;
-  background-color: hsl(349, 100%, 95%);
-  position: relative;
+  width: 100%;
+  padding: 1rem;
   margin-top: 1rem;
+  position: relative;
+  //color
+  color: $slate-500;
+  background-color: hsl(349, 100%, 95%);
+  //border
+  border-radius: 1.25rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1.25rem;
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, $gradient2, $gradient4) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  cursor: pointer;
 
   &-wrap {
     max-width: 400px;
@@ -54,4 +85,15 @@ $animation-speed: 1200ms;
   &:last-child {
     margin-bottom: 1rem;
   }
+}
+
+.l-canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: -1;
+  pointer-events: none;
 }
