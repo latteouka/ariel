@@ -88,7 +88,7 @@ const float PI = 3.1415926535897932384626433832795;
 void main(void) {
   vec2 uv = gl_FragCoord.xy / 3.0;
 
-  vec3 ambient = u_color;
+  vec3 ambient = u_lightColor;
 
   float diffuseStrength = max(dot(vSurfaceToLight, vNormal), 0.0);
   vec3 diffuse = u_lightColor * diffuseStrength;
@@ -100,7 +100,7 @@ void main(void) {
   vec3 noiseColors = vec3(snoise(uv) * 0.5 + 0.5);
   noiseColors *= pow(light.r, 5.0);
 
-  vec3 color = u_color * light ;
+  vec3 color = u_color * light;
   // gl_FragColor.r = max(noiseColors.r, u_color.r);
   // gl_FragColor.g = max(noiseColors.g, u_color.g);
   // gl_FragColor.b = max(noiseColors.b, u_color.b);
@@ -108,7 +108,7 @@ void main(void) {
   // gl_FragColor.g = noiseColors.g;
   // gl_FragColor.b = noiseColors.b;
   // gl_FragColor.a = 1.0;
-  gl_FragColor = vec4(color, 1.0);
+  gl_FragColor = vec4(light, 1.0);
 
   // gl_FragColor = vec4(sin(light_value.z * PI),0.0, 0.0, 1.0);
   // gl_FragColor = vec4(u_lightPos.y, 0.0, 0.0, 1.0);
