@@ -100,7 +100,7 @@ void main(void) {
   vec3 noiseColors = vec3(snoise(uv) * 0.5 + 0.5);
   noiseColors *= pow(light.r, 5.0);
 
-  vec3 color = u_color * light;
+  vec3 color = u_color * light * noiseColors;
   // gl_FragColor.r = max(noiseColors.r, u_color.r);
   // gl_FragColor.g = max(noiseColors.g, u_color.g);
   // gl_FragColor.b = max(noiseColors.b, u_color.b);

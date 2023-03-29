@@ -48,8 +48,8 @@ export class Item extends MyObject3D {
 
     const material = this._mesh.material as THREE.ShaderMaterial;
     material.uniforms.u_lightPos.value.set(
-      MousePointer.instance.x - Func.instance.sw() / 2,
-      -MousePointer.instance.y + Func.instance.sh() / 2,
+      MousePointer.instance.lerp.x - Func.instance.sw() / 2,
+      -MousePointer.instance.lerp.y + Func.instance.sh() / 2,
       5
     );
   }

@@ -1,6 +1,7 @@
 import { Point } from "../libs/point";
 import { Update } from "../libs/update";
 import { Util } from "../libs/util";
+import { gsap } from "gsap";
 
 export class MousePointer {
   private static _instance: MousePointer;
@@ -9,6 +10,7 @@ export class MousePointer {
   public y: number = window.innerHeight * 0.5;
   public old: Point = new Point();
   public normal: Point = new Point();
+  public lerp: Point = new Point();
   public easeNormal: Point = new Point();
   public start: Point = new Point();
   public moveDist: Point = new Point();
@@ -138,6 +140,9 @@ export class MousePointer {
       this.moveDist.x += (0 - this.moveDist.x) * 0.25;
       this.moveDist.y += (0 - this.moveDist.y) * 0.25;
     }
+
+    gsap.to(this.lerp, { x: this.x, duration: 1 });
+    gsap.to(this.lerp, { y: this.y, duration: 1 });
 
     this.normal.x = Util.instance.map(this.x, -1, 1, 0, window.innerWidth);
     this.normal.y = Util.instance.map(this.y, -1, 1, 0, window.innerHeight);
