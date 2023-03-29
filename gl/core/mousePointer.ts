@@ -21,59 +21,33 @@ export class MousePointer {
   private _updateHandler: any;
 
   constructor() {
-    if (Util.instance.isTouchDevice()) {
-      const tg = document.querySelector(".l-canvas") || window;
-      tg.addEventListener(
-        "touchstart",
-        (e: any = {}) => {
-          this._eTouchStart(e);
-        },
-        { passive: false }
-      );
-      tg.addEventListener(
-        "touchend",
-        () => {
-          this._eTouchEnd();
-        },
-        { passive: false }
-      );
-      tg.addEventListener(
-        "touchmove",
-        (e: any = {}) => {
-          this._eTouchMove(e);
-        },
-        { passive: false }
-      );
-    } else {
-      window.addEventListener("mousedown", (e: any = {}) => {
-        this._eDown(e);
-      });
-      window.addEventListener("mouseup", () => {
-        this._eUp();
-      });
-      window.addEventListener("mousemove", (e: any = {}) => {
-        this._eMove(e);
-      });
-      // document.addEventListener('wheel', (e) => {
-      //     if(this.usePreventDefault) {
-      //         e.preventDefault()
-      //         e.stopPropagation()
-      //     }
-      //     const test = Math.abs(e.deltaY)
-      //     if(test > 5 && this._useWheel) {
-      //         if(this.onSwipe != undefined) this.onSwipe({move:e.deltaY})
-      //         this._useWheel = false
-      //         setTimeout(() => {
-      //             this._useWheel = true
-      //         }, 1000)
-      //     }
-      // }, {passive:false})
-    }
-
     this._updateHandler = this._update.bind(this);
     Update.instance.add(this._updateHandler);
+    this.setListeners();
   }
 
+  public setListeners() {
+    window.addEventListener("pointerdown", (e: any = {}) => {
+      this._eDown(e);
+    });
+    window.addEventListener("pointerup", () => {
+      this._eUp();
+    });
+    window.addEventListener("pointermove", (e: any = {}) => {
+      this._eMove(e);
+    });
+  }
+  public removeListeners() {
+    window.removeEventListener("pointerdown", (e: any = {}) => {
+      this._eDown(e);
+    });
+    window.removeEventListener("pointerup", () => {
+      this._eUp();
+    });
+    window.removeEventListener("pointermove", (e: any = {}) => {
+      this._eMove(e);
+    });
+  }
   public static get instance(): MousePointer {
     if (!this._instance) {
       this._instance = new MousePointer();
