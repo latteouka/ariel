@@ -10,6 +10,7 @@ export default function Home() {
           );
         })}
       </div>
+      <canvas className="l-canvas"></canvas>
     </div>
   );
 }
@@ -21,9 +22,11 @@ interface Props {
 
 const Box = ({ content, date }: Props) => {
   return (
-    <div className="kotoba">
-      <div className="date">{date}</div>
-      <div className="content">{content}</div>
-    </div>
+    <>
+      <div className="kotoba">
+        <div className="date">{date}</div>
+        <div className="content">{content}</div>
+      </div>
+    </>
   );
 };

@@ -17,6 +17,6 @@ void main(){
   vec3 mv = vec3(modelViewMatrix * vec4(position, 1.0));
   vec3 worldLightPos = vec3(viewMatrix * vec4(u_lightPos, 1.0));
 
-  vSurfaceToLight = normalize(worldLightPos - mv);
+  vSurfaceToLight = normalize(u_lightPos - mv);
 }
 

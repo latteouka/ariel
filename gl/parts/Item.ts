@@ -11,7 +11,7 @@ export class Item extends MyObject3D {
   constructor() {
     super();
 
-    const geometry = new THREE.PlaneGeometry(1, 1);
+    const geometry = new THREE.SphereGeometry(1, 32);
     const material = new THREE.ShaderMaterial({
       vertexShader: vertex,
       fragmentShader: fragment,
@@ -27,7 +27,7 @@ export class Item extends MyObject3D {
           value: new THREE.Vector3(0, 0, 0),
         },
         u_lightColor: {
-          value: new THREE.Color(0xfea9cb),
+          value: new THREE.Color(0xf8cfcf),
         },
         u_color: {
           value: new THREE.Color(0xffffff),
@@ -50,7 +50,7 @@ export class Item extends MyObject3D {
     material.uniforms.u_lightPos.value.set(
       MousePointer.instance.x - Func.instance.sw() / 2,
       -MousePointer.instance.y + Func.instance.sh() / 2,
-      200
+      5
     );
   }
 

@@ -7,7 +7,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <canvas className="l-canvas"></canvas>
       </body>
     </Html>
   );

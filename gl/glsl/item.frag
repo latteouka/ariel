@@ -3,6 +3,7 @@ uniform sampler2D u_texture;
 uniform vec4 u_resolution;
 uniform vec3 u_color;
 uniform vec3 u_lightColor;
+uniform vec3 u_lightPos;
 
 varying vec3 vPos;
 varying vec2 vUv;
@@ -81,26 +82,36 @@ float snoise(vec2 v)
 }
 
 
-vec3 light_reflection(vec3 lightColor) {
-  vec3 ambient = lightColor;
-  vec3 diffuse = lightColor * dot(vSurfaceToLight, vNormal);
-  return (ambient + diffuse);
-}
+
+const float PI = 3.1415926535897932384626433832795;
 
 void main(void) {
-  vec2 uv = gl_FragCoord.xy / 4.0;
+  vec2 uv = gl_FragCoord.xy / 3.0;
 
-  vec3 light_value = light_reflection(u_lightColor);
+  vec3 ambient = u_color;
+
+  float diffuseStrength = max(dot(vSurfaceToLight, vNormal), 0.0);
+  vec3 diffuse = u_lightColor * diffuseStrength;
+
+
+  vec3 light = ambient + diffuse;;
+  light *= 0.6;
+
   vec3 noiseColors = vec3(snoise(uv) * 0.5 + 0.5);
+  noiseColors *= pow(light.r, 5.0);
 
-  light_value *= 1.0;
-  noiseColors *= pow(light_value.r, 5.0);
+  vec3 color = u_color * light ;
+  // gl_FragColor.r = max(noiseColors.r, u_color.r);
+  // gl_FragColor.g = max(noiseColors.g, u_color.g);
+  // gl_FragColor.b = max(noiseColors.b, u_color.b);
+  // gl_FragColor.r = noiseColors.r;
+  // gl_FragColor.g = noiseColors.g;
+  // gl_FragColor.b = noiseColors.b;
+  // gl_FragColor.a = 1.0;
+  gl_FragColor = vec4(color, 1.0);
 
-  gl_FragColor.r = noiseColors.r;
-  gl_FragColor.g = noiseColors.g;
-  gl_FragColor.b = noiseColors.b;
-  gl_FragColor.a = 1.0;
-
-  gl_FragColor = vec4(light_value, 1.0);
+  // gl_FragColor = vec4(sin(light_value.z * PI),0.0, 0.0, 1.0);
+  // gl_FragColor = vec4(u_lightPos.y, 0.0, 0.0, 1.0);
+  // gl_FragColor = vec4(sin(vUv.y), 0.0, 0.0, 1.0);
 }
 

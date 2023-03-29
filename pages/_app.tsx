@@ -11,6 +11,7 @@ const font = Noto_Sans_JP({
 
 export default function App({ Component, pageProps }: AppProps) {
   const three = useRef<Contents>();
+
   useEffect(() => {
     if (three.current) return;
     three.current = new Contents(document.querySelector(".l-canvas"));
