@@ -39,7 +39,7 @@ export class Item extends MyObject3D {
     });
 
     this._mesh = new THREE.Mesh(geometry, material);
-    this._mesh.scale.set(Func.instance.sw(), Func.instance.sh(), 1);
+    this._mesh.scale.set(Func.instance.sw() * 1.4, Func.instance.sh() * 1.4, 1);
     this.add(this._mesh);
   }
 
