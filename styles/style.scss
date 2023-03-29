@@ -74,6 +74,9 @@ $gradient4: #fea9cb;
   }
 
   cursor: pointer;
+  @include sp {
+    cursor: none;
+  }
 
   &-wrap {
     max-width: 400px;
