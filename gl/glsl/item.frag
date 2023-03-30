@@ -90,7 +90,7 @@ void main(void) {
 
   vec3 ambient = u_lightColor;
 
-  float diffuseStrength = max(dot(vSurfaceToLight, vNormal), 0.0) * 0.9;
+  float diffuseStrength = max(dot(vSurfaceToLight, vNormal), 0.0) ;
   vec3 diffuse = u_lightColor * diffuseStrength;
 
 
