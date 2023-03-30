@@ -1,6 +1,11 @@
 const kotoba = [
   {
     content:
+      "(zero)(three)(three)(zero)🥞就跟🪄The Holy Roman Empire is neither Holy, nor Roman, nor an Empire. 🪄CS只是title而已(yes) 就跟年紀只是數字一樣的～hv some faith in yourself",
+    date: "2023/03/30",
+  },
+  {
+    content:
       "今日是適合卡片風的日子☁️再上班兩天就要放連假了(handclap)然後無關緊要tmi一則 廁所的燈居然不亮了：））",
     date: "2023/03/29",
   },
