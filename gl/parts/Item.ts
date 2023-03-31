@@ -54,7 +54,7 @@ export class Item extends MyObject3D {
     material.uniforms.u_lightPos.value.set(
       MousePointer.instance.lerp.x - Func.instance.sw() / 2,
       -MousePointer.instance.lerp.y + Func.instance.sh() / 2,
-      5
+      1
     );
   }
 

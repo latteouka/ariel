@@ -1,6 +1,11 @@
 const kotoba = [
   {
     content:
+      "(perfume)”Talent means nothing, while experience, acquired in humility and with hard work, means everything.”(emoji)面對自己的不足 所以每天都比別人更努力一點 希望這些微小的日積月累可以在某天派上用場(emoji)",
+    date: "2023/03/31",
+  },
+  {
+    content:
       "(zero)(three)(three)(zero)🥞就跟🪄The Holy Roman Empire is neither Holy, nor Roman, nor an Empire. 🪄CS只是title而已(yes) 就跟年紀只是數字一樣的～hv some faith in yourself",
     date: "2023/03/30",
   },

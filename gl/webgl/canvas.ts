@@ -68,9 +68,12 @@ export class Canvas extends MyDisplay {
     w: number = 10,
     h: number = 10
   ) {
+    const perspective = 400;
+
+    camera.fov = (180 * (2 * Math.atan(h / 2 / perspective))) / Math.PI;
     camera.aspect = w / h;
+    camera.position.z = perspective;
     camera.updateProjectionMatrix();
-    camera.position.z = h / Math.tan((camera.fov * Math.PI) / 360) / 2;
   }
 
   protected _updateOrthCamera(
