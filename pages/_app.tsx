@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
   useLenis();
 
   useEffect(() => {
+    // canvas
     if (three.current) return;
     three.current = new Contents(document.querySelector(".l-canvas"));
   }, []);
