@@ -1,6 +1,11 @@
 const kotoba = [
   {
     content:
+      "🛑不要一眼看完哦哈哈哈哈哈哈 週日下午🍵用一則冷笑話開啟下半天吧“How would you call a Medieval spy?” Sir Veillance. “(handclap)(handclap)笑一笑繼續加油吧(~)(~)tmi=昨天看Constantine剛好看到主角說it’s rubbish.🤣🤣🤣",
+    date: "2023/04/02",
+  },
+  {
+    content:
       "✨快樂連假✨美好的一天從早餐開始☕️🍳重金禮聘奧德賽來當加油團(good luck)“There is no greater fame for a man than that which he wins with his footwork or the skill of his hands.”赫然發現今天是四月了(emoji)",
     date: "2023/04/01",
   },

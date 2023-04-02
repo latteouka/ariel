@@ -21,6 +21,7 @@ $gradient4: #fea9cb;
   display: flex;
   align-items: center;
   flex-direction: column;
+  opacity: 0;
 
   @include sp {
     padding: 0 1rem;
