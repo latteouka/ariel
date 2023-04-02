@@ -1,6 +1,11 @@
 const kotoba = [
   {
     content:
+      "✨快樂連假✨美好的一天從早餐開始☕️🍳重金禮聘奧德賽來當加油團(good luck)“There is no greater fame for a man than that which he wins with his footwork or the skill of his hands.”赫然發現今天是四月了(emoji)",
+    date: "2023/04/01",
+  },
+  {
+    content:
       "(perfume)”Talent means nothing, while experience, acquired in humility and with hard work, means everything.”(emoji)面對自己的不足 所以每天都比別人更努力一點 希望這些微小的日積月累可以在某天派上用場(emoji)",
     date: "2023/03/31",
   },
