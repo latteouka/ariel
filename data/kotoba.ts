@@ -1,6 +1,11 @@
 const kotoba = [
   {
     content:
+      "連假的最後一天(emoji)珍惜跟沙發培養感情的時間“Anyone who has never made a mistake has never tried anything new. “電腦嘎U(emoji)哩馬嘎U",
+    date: "2023/04/05",
+  },
+  {
+    content:
       "🛑不要一眼看完哦哈哈哈哈哈哈 週日下午🍵用一則冷笑話開啟下半天吧“How would you call a Medieval spy?” Sir Veillance. “(handclap)(handclap)笑一笑繼續加油吧(~)(~)tmi=昨天看Constantine剛好看到主角說it’s rubbish.🤣🤣🤣",
     date: "2023/04/02",
   },
