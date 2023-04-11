@@ -1,6 +1,34 @@
 const kotoba = [
   {
     content:
+      "拜一(good job)超級喜歡的一句話“Keep your face to the sunshineAnd you cannot see the shadow.”🚂今天要解鎖沒去過的城市諾丁漢",
+    date: "2023/04/10",
+  },
+  {
+    content:
+      "Success doesn't come from what your do occasionally, it comes from what you do consistently. If you're in a storm, I'll hold your umbrella.",
+    date: "2023/04/09",
+  },
+  {
+    content: "Don't let anyone dull your sparkle.",
+    date: "2023/04/08",
+  },
+  {
+    content:
+      "(emoji)歐嗨唷☕️快樂的假日開始了(~)一天一顆蛋🥚醫生遠離你“DAUS ONLP NYLA TOYR LNOK EEUL TDRE”",
+    date: "2023/04/08",
+  },
+  {
+    content:
+      "又要到假日啦(good job)(clov)”It’s better to fail in originality than to success in imitation.  “(clov)想像力是你的超能力♪( ´θ｀)ノawaits for ur (F)unctional (R)ecreation (I)nnovative (D)esign(A)nnouncement(Y)atter. (emoji)",
+    date: "2023/04/07",
+  },
+  {
+    content: "Optimism is the faith that leads to achievement. - Helen Keller",
+    date: "2023/04/06",
+  },
+  {
+    content:
       "連假的最後一天(emoji)珍惜跟沙發培養感情的時間“Anyone who has never made a mistake has never tried anything new. “電腦嘎U(emoji)哩馬嘎U",
     date: "2023/04/05",
   },
