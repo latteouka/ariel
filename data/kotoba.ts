@@ -1,6 +1,16 @@
 const kotoba = [
   {
     content:
+      "(a)0412(a)Perseverance is the 'little' thing that makes a big difference. (&) I might not be a warming kind of person, but i am one text away.(emoji)第四季想看的角色只出現了30分鐘:）突然想到 結果你有吃雞蛋豆腐嗎哈哈哈哈哈",
+    date: "2023/04/12",
+  },
+  {
+    content:
+      "(:))0411(:))“It is often the small steps, not the giant leaps, that bring about the most lasting change.” by 已逝的女王 走在路上巧遇日出茶太相當驚訝的人wish u a lovely day(cool)",
+    date: "2023/04/11",
+  },
+  {
+    content:
       "拜一(good job)超級喜歡的一句話“Keep your face to the sunshineAnd you cannot see the shadow.”🚂今天要解鎖沒去過的城市諾丁漢",
     date: "2023/04/10",
   },
