@@ -1,6 +1,16 @@
 const kotoba = [
   {
     content:
+      "☕️Guten Morgen (.)(.)(.)(.)“If it wasn't hard, everyone would do it. It's the hard that makes it great.”希望今天是適合人類的25度🌡️(.)(.)(.)(.)宿舍回歸日(emoji)",
+    date: "2023/04/14",
+  },
+  {
+    content:
+      "People can't change the direction of the wind, but they can adjust their sails to always reach the destination.",
+    date: "2023/04/13",
+  },
+  {
+    content:
       "(a)0412(a)Perseverance is the 'little' thing that makes a big difference. (&) I might not be a warming kind of person, but i am one text away.(emoji)第四季想看的角色只出現了30分鐘:）突然想到 結果你有吃雞蛋豆腐嗎哈哈哈哈哈",
     date: "2023/04/12",
   },
