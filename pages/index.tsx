@@ -1,8 +1,34 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import kotobas from "../data/kotoba";
 import { gsap } from "gsap";
+import { useInfiniteQuery } from "@tanstack/react-query";
+import { useInView } from "react-intersection-observer";
+import { DataType } from "./api/posts";
+import axios from "axios";
+
+export interface ResponseAPI {
+  nextId: number | null;
+  previousId: number | null;
+  data: DataType[];
+}
+
 export default function Home() {
+  const { ref: inViewRef, inView } = useInView();
   const ref = useRef(null);
+
+  // scroll and load
+  const { data, isFetchingNextPage, fetchNextPage, hasNextPage } =
+    useInfiniteQuery(
+      ["posts"],
+      async ({ pageParam = 0 }) => {
+        const res = await axios.get("/api/posts?cursor=" + pageParam);
+        return res.data;
+      },
+      {
+        getNextPageParam: (lastPage: ResponseAPI) =>
+          lastPage.nextId ?? undefined,
+      }
+    );
 
   useEffect(() => {
     gsap.to(ref.current, {
@@ -11,16 +37,36 @@ export default function Home() {
       ease: "power4.inout",
     });
   }, []);
+
+  useEffect(() => {
+    if (inView) {
+      fetchNextPage();
+    }
+  }, [inView]);
+
   return (
     <div className="wrap" ref={ref}>
       <div className="heading">Ariel の励ましの言葉</div>
-      <div className="kotoba-wrap">
-        {kotobas.map((kotoba, index) => {
-          return (
-            <Box key={index} content={kotoba.content} date={kotoba.date} />
-          );
-        })}
-      </div>
+      {data && (
+        <>
+          <div className="kotoba-wrap">
+            {data.pages.map((page) => (
+              <React.Fragment key={page.nextId}>
+                {page.data.map((post, index) => (
+                  <Box key={index} content={post.content} date={post.date} />
+                ))}
+              </React.Fragment>
+            ))}
+          </div>
+          <div ref={inViewRef} className="status">
+            {isFetchingNextPage
+              ? "Loading more..."
+              : hasNextPage
+              ? "Load Newer"
+              : "End"}
+          </div>
+        </>
+      )}
       <canvas className="l-canvas"></canvas>
     </div>
   );

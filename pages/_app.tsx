@@ -4,6 +4,10 @@ import { useEffect, useRef } from "react";
 import { Noto_Sans_JP } from "next/font/google";
 import { Contents } from "@/gl/parts/contents";
 import useLenis from "@/utils/useLenis";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
+
 const font = Noto_Sans_JP({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -21,8 +25,10 @@ export default function App({ Component, pageProps }: AppProps) {
     three.current = new Contents(document.querySelector(".l-canvas"));
   }, []);
   return (
-    <main className={font.variable}>
-      <Component {...pageProps} />
-    </main>
+    <QueryClientProvider client={queryClient}>
+      <main className={font.variable}>
+        <Component {...pageProps} />
+      </main>
+    </QueryClientProvider>
   );
 }

@@ -1,6 +1,31 @@
 const kotoba = [
   {
     content:
+      "Merry Friday night!Weekend is one step away. “You don’t have to be great to start, but you have to start to be great.”Transatlantic is simply a series depicting on sorrow and forlorn.",
+    date: "2023/04/21",
+  },
+  {
+    content:
+      "No matter how bad things get, the true test is how we choose to respond to the pain we suffer, or inflict. (Lucifer)",
+    date: "2023/04/20",
+  },
+  {
+    content:
+      "✨參Merlin裡面好笑又很強的梅林🧙🏼：“Do not give up on something you really want. It’s difficult to wait, but more difficult to regret.” 🪄btw A4紙真的是看著無害的利器(tears)",
+    date: "2023/04/19",
+  },
+  {
+    content:
+      "If there's anyone who deserves to be what they chose to be, I'll bet it's you. I've said thay not many people possess dreams, not to say pursuing, yet you are so dedicated to those techniques. 'A person who never made a mistake never tried anything new.' - Albert Einstein.",
+    date: "2023/04/18",
+  },
+  {
+    content:
+      "今日的Blue Monday充電站(roger)“It's important to try to be present with whatever it is you're doing. And if you can't be present, take a break.☕️終於看完1899惹 好像也沒評價那麼糟 就是很沈悶而已(emoji)",
+    date: "2023/04/17",
+  },
+  {
+    content:
       "突然發現今天是珍貴的星期天(:))最喜歡的英國演員BC🇬🇧：“The further you get away from yourself, the more challenging it is. Not to be in your comfort zone is great fun.”希望可以在地鐵上遇到本人(⁎⁍̴̛ᴗ⁍̴̛⁎)",
     date: "2023/04/16",
   },
