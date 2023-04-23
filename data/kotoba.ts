@@ -1,6 +1,11 @@
 const kotoba = [
   {
     content:
+      '好像沒有問過你看不看得懂德文(？)From Dark (right)(")But every now and then it’s good to question those who question things.(")（“Aber hin und wieder ist es gut, diejenigen zu befragen, die Dinge hinterfragen.”）星期六引用dark好像太沈重惹：）',
+    date: "2023/04/22",
+  },
+  {
+    content:
       "Merry Friday night!Weekend is one step away. “You don’t have to be great to start, but you have to start to be great.”Transatlantic is simply a series depicting on sorrow and forlorn.",
     date: "2023/04/21",
   },

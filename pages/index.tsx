@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import kotobas from "../data/kotoba";
 import { gsap } from "gsap";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useInView } from "react-intersection-observer";
@@ -42,7 +41,7 @@ export default function Home() {
     if (inView) {
       fetchNextPage();
     }
-  }, [inView]);
+  }, [inView, fetchNextPage]);
 
   return (
     <div className="wrap" ref={ref}>
