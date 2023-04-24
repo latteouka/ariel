@@ -1,6 +1,16 @@
 const kotoba = [
   {
     content:
+      "(four)月的最後一個星期一下一個連假就在眼前(黑皮)（為啥台灣這麼多假可以放啦～～～～）少年維特的煩惱的歌德：“Knowing is not enough; we must apply. Wishing is not enough; we must do.”晚間奇人軼事：(one)成功解鎖被電腦電的技能：））",
+    date: "2023/04/24",
+  },
+  {
+    content:
+      "🌟🛵☀️“To kill an error is as good a service as, and sometimes even better than, the establishing of a new truth or fact.” – Charles Darwin今日的無用冷知識(emoji)達爾文跟林肯同天生日(&)他是神學院畢業的",
+    date: "2023/04/23",
+  },
+  {
+    content:
       '好像沒有問過你看不看得懂德文(？)From Dark (right)(")But every now and then it’s good to question those who question things.(")（“Aber hin und wieder ist es gut, diejenigen zu befragen, die Dinge hinterfragen.”）星期六引用dark好像太沈重惹：）',
     date: "2023/04/22",
   },
