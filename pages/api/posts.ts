@@ -7,6 +7,7 @@ import { ResponseAPI } from "..";
 export interface DataType {
   content: string;
   date: string;
+  reply?: string;
 }
 
 export default function handler(

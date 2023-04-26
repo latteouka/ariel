@@ -52,7 +52,12 @@ export default function Home() {
             {data.pages.map((page) => (
               <React.Fragment key={page.nextId}>
                 {page.data.map((post, index) => (
-                  <Box key={index} content={post.content} date={post.date} />
+                  <Box
+                    key={index}
+                    content={post.content}
+                    date={post.date}
+                    reply={post.reply}
+                  />
                 ))}
               </React.Fragment>
             ))}
@@ -71,17 +76,15 @@ export default function Home() {
   );
 }
 
-interface Props {
-  content: string;
-  date: string;
-}
-
-const Box = ({ content, date }: Props) => {
+const Box = ({ content, date, reply }: DataType) => {
   return (
     <>
       <div className="kotoba">
         <div className="date">{date}</div>
-        <div className="content">{content}</div>
+        <div className="content">
+          {content}
+          <span className="reply">{reply ?? ""}</span>
+        </div>
       </div>
     </>
   );

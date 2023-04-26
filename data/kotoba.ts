@@ -1,8 +1,9 @@
 const kotoba = [
   {
     content:
-      "04/26 好像在罵人的日期(*)The one I really keen from Bernard Shaw We don't stop playing because we grow old; we grow old because we stop playing. 荒唐記事(brown book)今天Post room寄信說去領包裹 但是完全想不起來買了啥哈哈哈哈(emoji) 一定是知識太佔記憶體了(yes) 🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪",
+      "04/26 好像在罵人的日期(*)The one I really keen from Bernard Shaw We don't stop playing because we grow old; we grow old because we stop playing. 荒唐記事(brown book)今天Post room寄信說去領包裹 但是完全想不起來買了啥哈哈哈哈(emoji) 一定是知識太佔記憶體了(yes)",
     date: "2023/04/26",
+    reply: "hahahahah🍪🍪🍪🍪🍪 hahahahahahaahhah",
   },
   {
     content:
