@@ -1,6 +1,16 @@
 const kotoba = [
   {
     content:
+      "04/26 好像在罵人的日期(*)The one I really keen from Bernard Shaw We don't stop playing because we grow old; we grow old because we stop playing. 荒唐記事(brown book)今天Post room寄信說去領包裹 但是完全想不起來買了啥哈哈哈哈(emoji) 一定是知識太佔記憶體了(yes) 🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪🍪",
+    date: "2023/04/26",
+  },
+  {
+    content:
+      "🇬🇧 Chewsday(:))In the realm of ideas everything depends on enthusiasm...in the real world all rests on perseverance.- Johann Wolfgang von Goethe🖊️突然發現英文數字沒有大小寫的差別",
+    date: "2023/04/25",
+  },
+  {
+    content:
       "(four)月的最後一個星期一下一個連假就在眼前(黑皮)（為啥台灣這麼多假可以放啦～～～～）少年維特的煩惱的歌德：“Knowing is not enough; we must apply. Wishing is not enough; we must do.”晚間奇人軼事：(one)成功解鎖被電腦電的技能：））",
     date: "2023/04/24",
   },
