@@ -1,6 +1,40 @@
 const kotoba = [
   {
     content:
+      "Roses do not bloom hurriedly; like any masterpiece, takes time to blossom.",
+    date: "2023/05/03",
+  },
+  {
+    content:
+      "(emoji)☕️下午安（？本日humor造句(－)(()People often say that motivation doesn’t last. Well, neither does bathing – that’s why we recommend it daily.())(emoji)🐟 🎣 🍣YOU居然要繼續出第五季(-_-)",
+    date: "2023/05/02",
+  },
+  {
+    content:
+      '📚"The book to read is not the one that thinks for you but the one which makes you think." —Harper Lee(hi)開箱新書(～)每次看到結尾都會覺得故事要結束了好可惜',
+    date: "2023/05/01",
+  },
+  {
+    content: "Vlog",
+    date: "2023/04/30",
+  },
+  {
+    content:
+      "According to AI(→)”Let the clarion call of hard work resonate within you, for its echoes shall never betray.”(emoji)敲敲杯原來不只台灣人會玩(hmm)各國的遊戲都好像🥹(emoji)就算是研究所考試還是有作弊的人：）",
+    date: "2023/04/29",
+  },
+  {
+    content:
+      "No amount of skillful invention can replace the essential element of imagination. ",
+    date: "2023/04/28",
+  },
+  {
+    content:
+      "雖然連續兩天蕭伯納but費邊粉じゃないGeorge Bernard Shaw,A life spent making mistakes is not only more honorable, but more useful than a life spent doing nothing.(emoji)是說一看到花生就笑出來了哈哈哈",
+    date: "2023/04/27",
+  },
+  {
+    content:
       "04/26 好像在罵人的日期(*)The one I really keen from Bernard Shaw We don't stop playing because we grow old; we grow old because we stop playing. 荒唐記事(brown book)今天Post room寄信說去領包裹 但是完全想不起來買了啥哈哈哈哈(emoji) 一定是知識太佔記憶體了(yes)",
     date: "2023/04/26",
     reply: "hahahahah🍪🍪🍪🍪🍪 hahahahahahaahhah",
