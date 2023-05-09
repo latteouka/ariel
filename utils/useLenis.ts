@@ -8,7 +8,8 @@ const useLenis = () => {
   useEffect(() => {
     lenis.current = new Lenis({
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-      smoothTouch: false,
+      smoothTouch: true,
+      touchMultiplier: 3,
     });
 
     function raf(time: number) {
