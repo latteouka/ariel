@@ -87,6 +87,21 @@ export default function Home() {
   );
 }
 
+const monthNames = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 const Box = ({ content, date, reply, changeMonth }: DataType) => {
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -113,9 +128,7 @@ const Box = ({ content, date, reply, changeMonth }: DataType) => {
     <>
       <div className="kotoba">
         {changeMonth && (
-          <div className="month">
-            {new Date(date).toLocaleString("default", { month: "long" })}
-          </div>
+          <div className="month">{monthNames[new Date(date).getMonth()]}</div>
         )}
         <div className="date">{date}</div>
         <div className="content">
