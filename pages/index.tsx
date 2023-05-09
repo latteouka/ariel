@@ -4,6 +4,8 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 import { useInView } from "react-intersection-observer";
 import { DataType } from "./api/posts";
 import axios from "axios";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export interface ResponseAPI {
   nextId: number | null;
@@ -51,14 +53,23 @@ export default function Home() {
           <div className="kotoba-wrap">
             {data.pages.map((page) => (
               <React.Fragment key={page.nextId}>
-                {page.data.map((post, index) => (
-                  <Box
-                    key={index}
-                    content={post.content}
-                    date={post.date}
-                    reply={post.reply}
-                  />
-                ))}
+                {page.data.map((post, index) => {
+                  const monthNext = page.data[index - 1]
+                    ? new Date(page.data[index - 1].date).getMonth()
+                    : 0;
+
+                  const monthNow = new Date(post.date).getMonth();
+
+                  return (
+                    <Box
+                      key={index}
+                      content={post.content}
+                      date={post.date}
+                      reply={post.reply}
+                      changeMonth={monthNow < monthNext}
+                    />
+                  );
+                })}
               </React.Fragment>
             ))}
           </div>
@@ -67,7 +78,7 @@ export default function Home() {
               ? "Loading more..."
               : hasNextPage
               ? "Load Newer"
-              : "End"}
+              : "🐈‍⬛"}
           </div>
         </>
       )}
@@ -76,10 +87,36 @@ export default function Home() {
   );
 }
 
-const Box = ({ content, date, reply }: DataType) => {
+const Box = ({ content, date, reply, changeMonth }: DataType) => {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const animations = gsap.utils.toArray(".kotoba");
+      animations.forEach((animation: any) => {
+        gsap.to(animation, {
+          x: "0",
+          opacity: 1,
+          duration: 0.5,
+          ease: "slowmo",
+          scrollTrigger: {
+            trigger: animation,
+            start: "bottom bottom",
+          },
+        });
+      });
+    });
+
+    return () => {
+      ctx.revert();
+    };
+  }, []);
   return (
     <>
       <div className="kotoba">
+        {changeMonth && (
+          <div className="month">
+            {new Date(date).toLocaleString("default", { month: "long" })}
+          </div>
+        )}
         <div className="date">{date}</div>
         <div className="content">
           {content}

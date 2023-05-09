@@ -8,6 +8,7 @@ export interface DataType {
   content: string;
   date: string;
   reply?: string;
+  changeMonth?: boolean;
 }
 
 export default function handler(
