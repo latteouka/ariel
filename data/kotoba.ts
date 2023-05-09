@@ -1,6 +1,31 @@
 const kotoba = [
   {
     content:
+      "(drink)(bread)morning and hv a bloom Monday(～) Talent means nothing. while experiecne, acquired in humility and with hard work, means everything.",
+    date: "2023/05/08",
+  },
+  {
+    content:
+      "(0)(5)(0)(7)🌧️(emoji)持續沒有靈感中可以把星期當日期的日子要結束惹(～)“Optimism is a huge asset, it isn’t a belief that things will automatically get better; it’s a conviction that we can make things better.”(－)(－)(－)(－)(－)(－)(－)(－)(－)(emoji) 英國人民對皇室好有行動力(emoji)免費地鐵day(emoji)海德公園一側是觀禮的人一側是抗議的人 = 到處都是人(emoji)",
+    date: "2023/05/07",
+  },
+  {
+    content:
+      "(crown)(crown)(crown)To beer or not to beer, that is the question. BUT Routine不能忘記傳(emoji)(「)A year spent in artificial intelligence is enough to make one believe in God.(」)(emoji)期待U&AI合作無間的作品們出現延遲很久才發現影片會寫成vlog 🎞️ 還有我真的已經習慣被已讀惹(emoji)",
+    date: "2023/05/06",
+  },
+  {
+    content:
+      "(emoji)(emoji)Dark dark, swirl in the whiteMix in the morningFade out the nightDark dark, swirl in the whiteFresh day brewing On hot sunlight (emoji)Coffee, creative lighter fluid, light up the sparkle ideas. (emoji)One step away to the thriving weekend(emoji)",
+    date: "2023/05/05",
+  },
+  {
+    content:
+      "(5)(/)(4)☕️4號星期四 數字一致的時候心情很好(emoji)“The only person you are destined to become is the person you decide to be.”(emoji)因為男主角看了Transatlantic 好像很適合配飯 不會不小心一次看完整季(emoji)",
+    date: "2023/05/04",
+  },
+  {
+    content:
       "Roses do not bloom hurriedly; like any masterpiece, takes time to blossom.",
     date: "2023/05/03",
   },
