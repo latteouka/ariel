@@ -1,6 +1,23 @@
 const kotoba = [
   {
     content:
+      "Always be a first-rate of yourself instead of a second-rate version of somebody else. - Judy Garland.",
+    date: "2023/05/11",
+    postType: "image",
+    imageUrl: "/20230511.jpg",
+  },
+  {
+    content:
+      '(G)(O)(O)(D)  (A)(F)(T)(E)(R)(N)(O)(O)(N)不是什麼名言 只是看到的時候覺得很適合你(emoji) "Engineers like to solve problems. If there are no problems handily available, they will create their own problems." Oppenheimer又出新預告了 星期三的無用冷知識：🧊Hello Kitty不是貓咪 是住在英國的小女孩',
+    date: "2023/05/10",
+  },
+  {
+    content:
+      " 不要再下雨了(~)(→)“There are three things, to my account, that I need each day. One of them is something to look up to, another is something to look forward to, and another is someone to chase.” – Matthew McConaughey🎬偶爾有The gentleman 這種風格的電影還不賴 突然想到一直沒看的Transcendence 開始看才發現題材是AI(emoji) 電影裡的AI都好可怕",
+    date: "2023/05/09",
+  },
+  {
+    content:
       "Morning and hv a bloom Monday(～) Perfume: Talent means nothing. while experiecne, acquired in humility and with hard work, means everything.",
     date: "2023/05/08",
   },

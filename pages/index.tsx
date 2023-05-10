@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import { useInView } from "react-intersection-observer";
@@ -47,7 +48,7 @@ export default function Home() {
 
   return (
     <div className="wrap" ref={ref}>
-      <div className="heading">Ariel の励ましの言葉</div>
+      <div className="heading">Ariel</div>
       {data && (
         <>
           <div className="kotoba-wrap">
@@ -67,6 +68,8 @@ export default function Home() {
                       date={post.date}
                       reply={post.reply}
                       changeMonth={monthNow < monthNext}
+                      postType={post.postType}
+                      imageUrl={post.imageUrl}
                     />
                   );
                 })}
@@ -102,7 +105,14 @@ const monthNames = [
   "December",
 ];
 
-const Box = ({ content, date, reply, changeMonth }: DataType) => {
+const Box = ({
+  content,
+  date,
+  reply,
+  changeMonth,
+  postType,
+  imageUrl,
+}: DataType) => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const animations = gsap.utils.toArray(".kotoba");
@@ -133,7 +143,14 @@ const Box = ({ content, date, reply, changeMonth }: DataType) => {
         <div className="date">{date}</div>
         <div className="content">
           {content}
-          <span className="reply">{reply ?? ""}</span>
+          <div>
+            {postType === "image" && imageUrl && (
+              <a href={imageUrl} target="_blank" className="image">
+                Image
+              </a>
+            )}
+          </div>
+          <div className="reply">{reply ?? ""}</div>
         </div>
       </div>
     </>

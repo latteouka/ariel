@@ -62,7 +62,8 @@ $gradient4: #fea9cb;
   //border
   border-radius: 1.25rem;
 
-  &::before {
+  &::after {
+    z-index: -1;
     content: "";
     position: absolute;
     top: 0;
@@ -79,10 +80,10 @@ $gradient4: #fea9cb;
     mask-composite: exclude;
   }
 
-  cursor: pointer;
-  @include sp {
-    cursor: none;
-  }
+  // cursor: pointer;
+  // @include sp {
+  //   cursor: none;
+  // }
 
   &-wrap {
     max-width: 400px;
@@ -128,5 +129,15 @@ $gradient4: #fea9cb;
     top: -45%;
     left: 5%;
     opacity: 15%;
+  }
+}
+
+.image {
+  text-decoration: none;
+  font-size: 0.9rem;
+  z-index: 10;
+
+  &:hover {
+    color: pink;
   }
 }

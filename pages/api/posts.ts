@@ -9,6 +9,8 @@ export interface DataType {
   date: string;
   reply?: string;
   changeMonth?: boolean;
+  postType?: string;
+  imageUrl?: string;
 }
 
 export default function handler(
