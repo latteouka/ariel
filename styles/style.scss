@@ -55,7 +55,14 @@ $gradient4: #fea9cb;
   margin-top: 1rem;
   position: relative;
   opacity: 0;
-  transform: translateX(30%);
+
+  &:nth-child(odd) {
+    transform: translateX(30%);
+  }
+
+  &:nth-child(even) {
+    transform: translateX(-30%);
+  }
   //color
   color: $slate-500;
   // background-color: hsl(349, 100%, 95%);
