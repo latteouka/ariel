@@ -9,6 +9,7 @@ const kotoba = [
     content:
       "歐嗨呦 A thought can be like a cloud just floating by, but a dream sticks to our minds like Velcro and becomes part of us. 今天也請繼續加油(～)",
     date: "2023/05/15",
+    reply: "Velcro: 魔鬼氈",
   },
   {
     content:
