@@ -93,6 +93,7 @@ const kotoba = [
   {
     content: "Vlog for school and street.",
     date: "2023/04/30",
+    reply: "and bread",
   },
   {
     content:
