@@ -27,6 +27,7 @@ const kotoba = [
     content:
       "星期五的milestone The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will.  In math, one can never reach its global optimum if it strikes in the same neighborhood N(x).(♪)每日播放清單-你的行李 又沒課了 可以開始看verity了",
     date: "2023/05/12",
+    reply: "（誠品）不存在的罪人: 真相與虛構的交織, 迷宮中最黑暗的人性悲劇www",
   },
   {
     content:
@@ -39,16 +40,19 @@ const kotoba = [
     content:
       '(G)(O)(O)(D)  (A)(F)(T)(E)(R)(N)(O)(O)(N)不是什麼名言 只是看到的時候覺得很適合你(emoji) "Engineers like to solve problems. If there are no problems handily available, they will create their own problems." Oppenheimer又出新預告了 星期三的無用冷知識：🧊Hello Kitty不是貓咪 是住在英國的小女孩',
     date: "2023/05/10",
+    reply: "I am the problem.",
   },
   {
     content:
       " 不要再下雨了(~)(→)“There are three things, to my account, that I need each day. One of them is something to look up to, another is something to look forward to, and another is someone to chase.” – Matthew McConaughey🎬偶爾有The gentleman 這種風格的電影還不賴 突然想到一直沒看的Transcendence 開始看才發現題材是AI(emoji) 電影裡的AI都好可怕",
     date: "2023/05/09",
+    reply: "つゆ",
   },
   {
     content:
       "Morning and hv a bloom Monday(～) Perfume: Talent means nothing. while experiecne, acquired in humility and with hard work, means everything.",
     date: "2023/05/08",
+    reply: "humidity",
   },
   {
     content:
@@ -59,6 +63,7 @@ const kotoba = [
     content:
       "(crown)(crown)(crown)To beer or not to beer, that is the question. BUT Routine不能忘記傳 A year spent in artificial intelligence is enough to make one believe in God. 期待U&AI合作無間的作品們出現延遲很久才發現影片會寫成vlog 🎞️ 還有我真的已經習慣被已讀惹",
     date: "2023/05/06",
+    reply: "這比夜唱累ㄅ🍺",
   },
   {
     content:
