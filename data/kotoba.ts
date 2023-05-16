@@ -1,6 +1,33 @@
 const kotoba = [
   {
     content:
+      "肚子餓的星期二 For what it’s worth it’s never too late to be whoever you want to be. The bad news is time flies, but the good news is you're the pilot. 其實已經不需要我的鼓勵惹對吧 但是非常感謝你陪我玩(~) It would only be the last time until the next time. 20度的英國",
+    date: "2023/05/16",
+    reply: "なんか寂しい",
+  },
+  {
+    content:
+      "歐嗨呦 A thought can be like a cloud just floating by, but a dream sticks to our minds like Velcro and becomes part of us. 今天也請繼續加油(～)",
+    date: "2023/05/15",
+  },
+  {
+    content:
+      "Mother's day  Try to learn something about everything and everything about something. An investment in knowledge pays the best interest. It's rather vexing that exponential thrillers are about parallel universes.",
+    date: "2023/05/14",
+  },
+  {
+    content:
+      "cos(67.4°)土曜日の朝 数学で感情を育て続けることで(~) 数学の美しさは辛抱強い信者にのみ示されます 加油です 高中最喜歡的判別式(→)√b^2-4ac meeting喝到了好喝的抹茶之我也想要有很罩的組員(emoji)",
+    date: "2023/05/13",
+    reply: "0.4039?",
+  },
+  {
+    content:
+      "星期五的milestone The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack in will.  In math, one can never reach its global optimum if it strikes in the same neighborhood N(x).(♪)每日播放清單-你的行李 又沒課了 可以開始看verity了",
+    date: "2023/05/12",
+  },
+  {
+    content:
       "Always be a first-rate of yourself instead of a second-rate version of somebody else. - Judy Garland.",
     date: "2023/05/11",
     postType: "image",
