@@ -13,8 +13,9 @@ const kotoba = [
   },
   {
     content:
-      "Mother's day  Try to learn something about everything and everything about something. An investment in knowledge pays the best interest. It's rather vexing that exponential thrillers are about parallel universes.",
+      "Mother's day. Try to learn something about everything and everything about something. An investment in knowledge pays the best interest. It's rather vexing that exponential thrillers are about parallel universes.",
     date: "2023/05/14",
+    reply: "異世界??",
   },
   {
     content:
